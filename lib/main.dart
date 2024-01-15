@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       /* darkTheme: ThemeClass.darkTheme,
       themeMode:ThemeMode.system, */
-      home: const LoginScreen(),
+      home:  LoginScreen(),
     );
   }
 }

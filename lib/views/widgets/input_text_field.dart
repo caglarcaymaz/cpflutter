@@ -6,7 +6,7 @@ class InputTextField extends StatelessWidget {
     final String labelText;
     final bool isObscure;
     final IconData icon;
-  const InputTextField({super.key, required this.controller, required this.icon, required this.isObscure, required this.labelText});
+  const InputTextField({super.key, required this.controller, required this.icon,  this.isObscure= false , required this.labelText});
 
   @override
   Widget build(BuildContext context) {
