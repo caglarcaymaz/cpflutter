@@ -1,6 +1,7 @@
 import 'package:cflutter/constants.dart';
 import 'package:cflutter/themes/theme.dart';
 import 'package:cflutter/views/screens/authentication/login_screen.dart';
+import 'package:cflutter/views/screens/authentication/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       /* darkTheme: ThemeClass.darkTheme,
       themeMode:ThemeMode.system, */
-      home:  LoginScreen(),
+      home:  SignupScreen(),
     );
   }
 }
