@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "41241786346",
+    "project_id": "vide4-f6178",
+    "storage_bucket": "vide4-f6178.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41241786346:android:539b2aac1e3d475b296493",
+        "android_client_info": {
+          "package_name": "com.example.cflutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbNtQ14qoYP3UkmKM0_mXDNf7dd7wO4mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

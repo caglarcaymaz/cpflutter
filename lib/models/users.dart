@@ -1,15 +1,16 @@
 class User{
-  String name;
-  String profilePhoto;
-  String email;
-  String uid;
-}
+  String? name;
+  String? profilePhoto;
+  String? email;
+  String? uid;
+
 User(
   {
-    required this.name;
-    required this.email;
-    required this.uid;
-    required this.profilePhoto;
-    
+    required this.name,
+    required this.email,
+    required this.uid,
+    required this.profilePhoto,
+
   }
-)
+);
+}

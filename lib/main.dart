@@ -2,14 +2,19 @@ import 'package:cflutter/constants.dart';
 import 'package:cflutter/themes/theme.dart';
 import 'package:cflutter/views/screens/authentication/login_screen.dart';
 import 'package:cflutter/views/screens/authentication/signup_screen.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/get_navigation.dart';
 import 'package:firebase_core/firebase_core.dart';
-
 import 'controllers/authentitaction_controller.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() async {
+  if(kIsWeb){
+    await Firebase.initializeApp(options: FirebaseOptions(apiKey: "AIzaSyA7cmYHMZZdV1493XTzx_crqCBWCUNPYi8", appId: "AIzaSyA7cmYHMZZdV1493XTzx_crqCBWCUNPYi8", messagingSenderId: "41241786346", projectId: "vide4-f6178"));
+  }
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   Get.put(AuthController);
@@ -32,7 +37,7 @@ class MyApp extends StatelessWidget {
       ),
       /* darkTheme: ThemeClass.darkTheme,
       themeMode:ThemeMode.system, */
-      home:  SignupScreen(),
+      home:  LoginScreen(),
     );
   }
 }
