@@ -13,4 +13,8 @@ User(
 
   }
 );
+Map<String,dynamic> toJson=>{
+  "name": name,
+  "profilephoto: profilephoto"
+}
 }
